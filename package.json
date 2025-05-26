@@ -1,0 +1,33 @@
+{
+  "name": "pia-labweb-217",
+  "version": "1.0.0",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Al230-spec/PIA-LABWEB-217.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Al230-spec/PIA-LABWEB-217/issues"
+  },
+  "homepage": "https://github.com/Al230-spec/PIA-LABWEB-217#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^11.0.1",
+    "multer": "^2.0.0",
+    "nodemailer": "^7.0.3",
+    "puppeteer": "^24.9.0"
+  }
+}
