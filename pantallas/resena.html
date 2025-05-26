@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reseña - FIME</title>
+  <link rel="stylesheet" href="css/resena.css" />
+</head>
+<body>
+<header>
+  <a href="pantaprincipal.html">
+    <img src="images/FIME.png" alt="FIME Logo" />
+  </a>
+  <span class="titulo">Eventos</span>
+  <nav>
+    <div class="centro-nav">
+    <button id="btnEstudiantiles">Estudiantiles</button>
+    <button id="btnAcademicos">Académicos</button>
+    <button id="btnCulturales">Culturales</button>
+    </div>
+      <div class="barra-usuario">
+        <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+          <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+        </button>
+    <input type="text" id="buscador" placeholder="Buscar evento" oninput="filtrarEventos()" />
+  </nav>
+</header>
+
+<main class="contenedor-reseña">
+  <div class="titulo-reseña">Escribe tu reseña:</div>
+  <div class="formulario-reseña">
+    <input type="text" id="nombre" name="nombre" readonly />
+    <label for="comentario">¿Qué te pareció este evento?</label><br />
+    <textarea id="comentario" name="comentario" rows="8"></textarea>
+
+    <div class="botones">
+      <button type="button" onclick="aceptarReseña()">Aceptar</button>
+      <button type="button" onclick="volverEventos()">Volver</button>
+    </div>
+  </div>
+</main>
+
+<script src="js/resena.js"></script>
+</body>
+</html>

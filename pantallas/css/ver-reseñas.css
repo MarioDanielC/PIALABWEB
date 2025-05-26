@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: #2ca146;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 28px 0;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+header a img {
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  height: 85px;
+}
+
+header .titulo {
+    position: absolute;
+    left: 21.5%;
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  margin-left: auto;
+}
+
+.centro-nav {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50.5%);
+}
+
+nav button {
+  background-color: #1d772f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #145c2400;
+}
+
+.barra-usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn img {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.logout-btn:hover img {
+  transform: scale(1.1);
+}
+
+#buscador {
+  background-color: #a3d9a5;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.contenedor-reseña {
+  background-color: #2ca146;
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.titulo-reseña {
+  background-color: #a8e6a3;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  background-color: #a8e6a3;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#volverBtn {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 30px auto 0;
+  display: block;
+  text-align: center;
+  background-color: #1d772f;
+}

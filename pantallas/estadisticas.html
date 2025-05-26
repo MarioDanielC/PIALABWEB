@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Administrador</title>
+  <link rel="stylesheet" href="css/estadisticas.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="menuadmin.html">
+      <img src="images/FIME.png" alt="FIME Logo" />
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <table id="tablaEstadisticas">
+      <thead>
+        <tr>
+          <th>Nombre del evento</th>
+          <th>Día/Hora del evento</th>
+          <th>Lugar</th>
+          <th>Total de asistentes</th>
+          <th>Total de comentarios</th>
+          <th>Promedio de ranking</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+    <div class="sidebar">
+      <h3>Promedio de Popularidad</h3>
+      <div class="popularidad" id="popularidadContainer">
+
+      </div>
+
+      <div class="estadisticas-btn">
+        <button onclick="exportarPDF()">Exportar PDF</button>
+        <button onclick="window.location.href='admin_comentarios.html'">Volver</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/estadisticas.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ver usuarios</title>
+    <link rel="stylesheet" href="css/usuarios_registados.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/FIME.png" alt="Logo" id="logo" style="cursor:pointer;" onclick="irMenuAdmin()">
+        
+        <div class="titulo">Administrador</div>
+
+        <div style="display: flex; align-items: center; gap: 10px; position: absolute; right: 30px;">
+            <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+                <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+            </button>
+            <input type="text" id="buscador" placeholder="Buscar usuario" oninput="filtrarUsuarios()" />
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Día/Hora en el que se registró</th>
+                    <th>Correo</th>
+                    <th>Rol</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuariosBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div style="text-align:center; margin-top: 20px;">
+        <button class="boton-volver" onclick="irMenuAdmin()">Volver</button>
+    </div>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>
+

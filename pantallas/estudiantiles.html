@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos Estudiantiles</title>
+  <link rel="stylesheet" href="css/pantaprincipal.css" />
+</head>
+<body>
+  <header>
+    <a href="pantaprincipal.html">
+      <img src="images/FIME.png" alt="FIME Logo" />
+    </a>
+    <span class="titulo">Eventos</span>
+    
+    <nav>
+      <div class="centro-nav">
+        <button id="btnEstudiantiles">Estudiantiles</button>
+        <button id="btnAcademicos">Académicos</button>
+        <button id="btnCulturales">Culturales</button>
+      </div>
+
+      <div class="barra-usuario">
+        <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+          <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+        </button>
+        <input type="text" id="buscador" placeholder="Buscar evento" />
+      </div>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <div class="container" id="eventos-container">
+
+    </div>
+  </main>
+
+  <script src="js/estudiantales.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #39a44b;
+    padding: 30px 0;
+    color: white;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+}
+
+.verde {
+    color: black;
+    background-color: #39a44b;
+    border-radius: 20px 20px 0 0;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario {
+    flex: 1;
+    max-width: 350px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.formulario form {
+    padding: 20px 25px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin: 15px 0 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="datetime-local"],
+.formulario input[type="file"] {
+    width: 100%;
+    background-color: #a3d9a5;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formulario select {
+    width: 100%;
+    background-color: #a3d9a5;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formulario input[type="file"] {
+    background-color: #f0f0f0;
+}
+
+.formulario button {
+    margin-top: 20px;
+    background-color: #000066;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #000099;
+}
+
+.boton-volver {
+    display: block;
+    background-color: #1d772f;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+}
+
+.tabla {
+    flex: 2;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.editar,
+.eliminar {
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.editar {
+    background-color: #000066;
+    color: white;
+}
+
+.eliminar {
+    background-color: red;
+    color: white;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 28px;
+  right: 110px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.logout-btn img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.logout-btn:hover img {
+    transform: scale(1.1);
+}

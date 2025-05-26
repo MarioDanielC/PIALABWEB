@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIME - Registro Administrador</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <header>
+    <img src="images/FIME.png" />
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Registro Administrador</h2>
+
+      <input type="text" id="registroAdminNombre" placeholder="Nombre completo" required /><br><br>
+
+      <input type="email" id="registroAdminCorreo" placeholder="Correo electrónico" required /><br><br>
+      <input type="password" id="registroAdminPassword" placeholder="Contraseña" required /><br><br>
+      <input type="password" id="registroAdminClave" placeholder="Clave de administrador" required /><br><br>
+
+      <div class="captcha">
+        <div class="g-recaptcha" data-sitekey="6LfqAzQrAAAAACI3M3n9a-N-czVwkf4e5jgvHJJB"></div>
+      </div>
+
+      <button onclick="registrarAdmin()">Registrar</button>
+      <button onclick="window.location.href='login.html'">Volver</button>
+    </div>
+  </main>
+
+  <script src="js/registroadmin.js"></script>
+</body>
+</html>
+s

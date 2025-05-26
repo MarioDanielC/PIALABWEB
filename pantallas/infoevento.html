@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Info evento - FIME</title>
+  <link rel="stylesheet" href="css/infoevento.css" />
+</head>
+<body>
+  <header>
+    <a href="pantaprincipal.html"><img src="images/FIME.png" alt="Logo FIME" /></a>
+    <div class="titulo">Eventos</div>
+    <nav>
+      <div class="centro-nav">
+    <button id="btnEstudiantiles">Estudiantiles</button>
+    <button id="btnAcademicos">Académicos</button>
+    <button id="btnCulturales">Culturales</button>
+      </div>
+      <input type="text" placeholder="buscar evento" />
+    </nav>
+      <div class="barra-usuario">
+        <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+          <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+        </button>
+
+  </header>
+
+  <main class="evento-contenedor">
+    <section class="evento-info">
+      <h2>Toma de protesta</h2>
+      <p>Viernes 7 de abril<br />15:00 horas<br />Gimnasio FIME</p>
+      <img src="images/protesta1.png" alt="Imagen del evento 1" />
+    </section>
+
+    <section class="evento-interaccion">
+      <div class="caja-interaccion like">
+        <p><strong>¿Asistirás a este evento?</strong></p>
+        <div class="like-contenedor">
+          <button id="likeBtn" title="Me gusta">
+            <img src="images/like.webp" alt="Me gusta" class="like-img" />
+          </button>
+          <span>Total: <span id="likeCount">0</span></span>
+        </div>
+      </div>
+
+      <div class="caja-interaccion">
+        <p><strong>¿Cómo calificarías este evento?</strong></p>
+        <div class="estrellas" id="estrellas">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+      </div>
+
+      <div class="botones-reseña">
+        <button id="verResenasBtn" class="boton-reseña">Ver reseñas</button>
+        <a id="escribirResenaLink" href="#" class="boton-reseña">Escribir una reseña</a>
+      </div>
+
+      <div class="volver-contenedor">
+        <a href="pantaprincipal.html" class="boton-reseña">Volver</a>
+      </div>
+    </section>
+  </main>
+  <script src="js/infoevento.js"></script>
+</body>
+</html>
+

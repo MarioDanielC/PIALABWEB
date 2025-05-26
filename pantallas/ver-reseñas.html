@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reseña - FIME</title>
+  <link rel="stylesheet" href="css/ver-reseñas.css" />
+</head>
+<body>
+
+<header>
+  <a href="pantaprincipal.html">
+    <img src="images/FIME.png" alt="FIME Logo" />
+  </a>
+  <span class="titulo">Eventos</span>
+
+  <nav>
+    <div class="centro-nav">
+    <button id="btnEstudiantiles">Estudiantiles</button>
+    <button id="btnAcademicos">Académicos</button>
+    <button id="btnCulturales">Culturales</button>
+    </div>
+
+    <div class="barra-usuario">
+      <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+        <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+      </button>
+      <input type="text" id="buscador" placeholder="Buscar evento" oninput="filtrarEventos()" />
+    </div>
+  </nav>
+</header>
+
+<main class="contenedor-reseña">
+  <div class="titulo-reseña">Reseñas</div>
+  <div class="container">
+    <div class="card">
+      <h3>Alan Alberto González Mejía</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    </div>
+    <div class="card">
+      <h3>Miriam Moreno</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    </div>
+  </div>
+
+  <div>
+    <button id="volverBtn">Volver</button>
+  </div>
+</main>
+
+<script src="js/ver-reseñas.js"></script>
+</body>
+</html>

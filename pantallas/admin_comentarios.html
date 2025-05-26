@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrador de Eventos</title>
+  <link rel="stylesheet" href="css/admincomentarios.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="menuadmin.html">
+      <img src="images/FIME.png" alt="FIME Logo" />
+      </a>
+    </div>
+    <h1>Administrador</h1>
+<nav>
+      <div class="barra-usuario">
+        <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+          <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+        </button>
+</nav>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre del evento</th>
+          <th>Día/Hora del evento</th>
+          <th>Lugar</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="eventTable">
+
+      </tbody>
+    </table>
+
+    <div class="estadisticas-btn">
+      <button onclick="verEstadisticas()">Ver Estadísticas</button>
+    </div>
+    <div class="volver-btn">
+  <button id="btnVolver">Volver</button>
+</div>
+  </main>
+
+  <script src="js/admincomentarios.js"></script>
+</body>
+</html>

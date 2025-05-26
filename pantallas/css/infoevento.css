@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+header {
+    background-color: #2ca146;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+header a img {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 85px;
+}
+
+header .titulo {
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  margin-left: auto;
+}
+
+.centro-nav {
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+nav button {
+  background-color: #1d772f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #145c24;
+}
+
+nav input[type="text"] {
+  background-color: #a3d9a5;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.evento-contenedor {
+  background-color: #2ca146;
+  width: 80%;
+  max-width: 1000px;
+  margin: 40px auto 20px auto;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.evento-info {
+  flex: 1 1 49%;
+  color: white;
+  padding-left: 0px;
+}
+
+.evento-info h2 {
+  margin-top: 0;
+}
+
+.evento-info img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.evento-interaccion {
+  flex: 1 1 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.caja-interaccion {
+  background-color: #c1f3c4;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1em;
+}
+
+.like-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+
+  margin-top: -50px;
+}
+
+#likeBtn {
+  background-color: #c1f3c4;
+  border: none;
+  border-radius: 50%;
+  padding: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#likeBtn:hover {
+  background-color: #c1f3c4;
+}
+
+.like-img {
+  width: 50px;
+  height: 50px;
+}
+
+.estrellas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.estrellas span {
+  font-size: 36px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.estrellas span.seleccionada {
+  color: gold;
+}
+
+.boton-reseña {
+  display: inline-block;
+  text-align: center;
+  background-color: #1d772f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.boton-reseña:hover {
+  background-color: #145c24;
+}
+
+.botones-reseña {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.volver-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 28px;
+  right: 235px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.logout-btn img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.logout-btn:hover img {
+    transform: scale(1.1);
+}

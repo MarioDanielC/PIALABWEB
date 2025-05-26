@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #39a44b;
+    padding: 30px 0;
+    color: white;
+    position: relative;
+    height: 88px;
+}
+
+header img {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 85px;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+.derecha {
+    text-align: right;
+    margin-right: 30px;
+}
+
+input[type="text"] {
+    background-color: #a3d9a5;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.boton {
+    color: white;
+    display: block;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: darkred;
+}
+
+.boton-volver {
+    display: inline-block;
+    text-align: center;
+    background-color: #1d772f;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-start;
+  }
+
+  .logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.logout-btn:hover img {
+    transform: scale(1.1);
+}

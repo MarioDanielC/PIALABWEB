@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+header {
+  background-color: #39a44b;
+  padding: 30px 0;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 27px;
+  justify-content: center;
+}
+
+header img {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 85px;
+}
+
+.titulo, header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+.estadisticas-btn {
+  text-align: center;
+  margin: 20px;
+}
+
+.volver-btn button {
+  background-color: rgb(0, 76, 14);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 28px;
+  right: 110px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.logout-btn img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.logout-btn:hover img {
+    transform: scale(1.1);
+}
+
+

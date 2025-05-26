@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrador - FIME</title>
+  <link rel="stylesheet" href="css/madmin.css" />
+</head>
+<body>
+  <header>
+    <img src="images/FIME.png"/>
+    <div class="titulo">Administrador</div>
+    <nav>
+      <div class="barra-usuario">
+        <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+          <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+        </button>
+</nav>
+  </header>
+
+  <div class="container">
+    <button class="boton" onclick="verEventos()">Ver eventos</button>
+    <button class="boton" onclick="gestionarEvento()">Crea o elimina un evento</button>
+    <button class="boton" onclick="verUsuarios()">Ver usuarios registrados</button>
+  </div>
+
+  <script src="js/madmin.js"></script>
+</body>
+</html>

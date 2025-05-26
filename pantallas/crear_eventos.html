@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Crear eventos</title>
+    <link rel="stylesheet" href="css/crear_eventos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="menuadmin.html"><img src="images/FIME.png" alt="Logo FIME"/></a>
+        <div class="titulo">Administrador</div>
+        <nav>
+            <div class="barra-usuario">
+                <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+                    <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <div class="formulario">
+            <div class="verde">Crear eventos</div>
+            <form id="formulario" enctype="multipart/form-data">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Evento" required>
+
+                <label for="diah">Día/Hora</label>
+                <input type="datetime-local" id="diah" name="diah" required>
+
+                <label for="lugar">Lugar</label>
+                <input type="text" id="lugar" name="lugar" placeholder="Dónde es" required>
+
+                <label for="cat">Categoría</label>
+                <select id="cat" name="cat" required>
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="1">Estudiantiles</option>
+                    <option value="2">Académicos</option>
+                    <option value="3">Culturales</option>
+                </select>
+
+                <label for="imagen">Imagen</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+
+                <button type="submit">Agregar</button>
+            </form>
+
+            <a href="menuadmin.html" class="boton-volver">Volver</a>
+        </div>
+
+        <div class="tabla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre del evento</th>
+                        <th>Día/Hora del evento</th>
+                        <th>Lugar</th>
+                        <th>Categoría</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/creareventos.js"></script>
+</body>
+</html>

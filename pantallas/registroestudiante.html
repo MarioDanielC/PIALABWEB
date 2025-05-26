@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro Eventos FIME</title>
+  <link rel="stylesheet" href="css/registroestudiante.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/FIME.png" alt="FIME Logo" class="logo" />
+    </header>
+
+    <main class="registro-container">
+      <h2>Nuevo usuario Estudiante</h2>
+<form id="registro-form" onsubmit="event.preventDefault(); registrarEstudiante();">
+  <input id="nombre" type="text" placeholder="Ingrese su nombre completo" required>
+  <input id="correo" type="email" placeholder="Ingrese su correo universitario" required>
+  <input id="contraseña" type="password" placeholder="Crear una contraseña" required>
+  <div class="g-recaptcha" data-sitekey="6LfqAzQrAAAAACI3M3n9a-N-czVwkf4e5jgvHJJB"></div>
+  <div class="botones-formulario">
+    <button type="submit">Registrarme</button>
+    <button type="button" onclick="volver()">Volver</button>
+  </div>
+</form>
+    </main>
+  </div>
+
+  <script src="js/registroestudiante.js"></script>
+</body>
+</html>

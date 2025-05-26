@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comentarios del Evento</title>
+  <link rel="stylesheet" href="css/comentarios.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="menuadmin.html">
+      <img src="images/FIME.png" alt="FIME Logo" />
+      </a>
+    </div>
+<nav>
+      <div class="barra-usuario">
+        <button id="btnLogout" class="logout-btn" title="Cerrar sesión">
+          <img src="images/cerrarsesion.png" alt="Cerrar sesión" />
+        </button>
+</nav>
+  </header>
+
+  <main>
+    <table id="comentariosTable">
+      <thead>
+        <tr>
+          <th>Usuario</th>
+          <th>Comentario</th>
+          <th>Calificación</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Comentarios cargados con JS -->
+      </tbody>
+    </table>
+
+    <div class="volver-btn-container">
+      <button onclick="volver()">Volver</button>
+    </div>
+  </main>
+
+  <script src="js/comentarios.js"></script>
+</body>
+</html>

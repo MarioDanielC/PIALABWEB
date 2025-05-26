@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/FIME.png" alt="Logo FIME" />
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Recuperar Contraseña</h2>
+
+      <select id="tipoUsuario">
+        <option value="">Selecciona tu rol</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="admin">Administrador</option>
+      </select>
+
+      <input type="email" id="correo" placeholder="Correo electrónico" />
+
+      <div class="captcha">
+        <div class="g-recaptcha" data-sitekey="6LfqAzQrAAAAACI3M3n9a-N-czVwkf4e5jgvHJJB" data-callback="onCaptchaVerified"></div>
+      </div>
+
+      <button onclick="recuperarContrasena()">Enviar instrucciones</button>
+      <button onclick="window.location.href='login.html'">Volver al inicio</button>
+    </div>
+  </main>
+
+  <script src="js/recuperarcontra.js"></script>
+</body>
+</html>

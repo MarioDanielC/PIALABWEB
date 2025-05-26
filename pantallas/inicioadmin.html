@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio Admin - FIME</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/FIME.png" alt="Logo FIME" />
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Inicio de sesión - Administrador</h2>
+
+      <input type="email" id="loginAdminCorreo" placeholder="Correo universitario" />
+      <input type="password" id="loginAdminPassword" placeholder="Contraseña" />
+      <input type="password" id="loginAdminClave" placeholder="Clave de administrador" />
+
+      <div class="captcha">
+        <div class="g-recaptcha" data-sitekey="6LfqAzQrAAAAACI3M3n9a-N-czVwkf4e5jgvHJJB"></div>
+      </div>
+
+      <p class="forgot-password">
+        <a href="recuperarcontra.html">¿Olvidaste tu contraseña?</a>
+      </p>
+
+      <button onclick="ingresarAdmin()">Ingresar</button>
+      <br />
+      <button onclick="volverAlInicio()">Volver al inicio</button>
+    </div>
+  </main>
+
+  <script src="js/inicioadmin.js"></script>
+</body>
+</html>
+
